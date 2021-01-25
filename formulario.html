@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Sitio Web HTML y CSS</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+</head>
+
+<body>
+
+	<header>
+		<h1>Sitio Web Formulario - JavaScript</h1>
+    <h4>Computación, Cliente y Servidor</h4>
+    <h5>Javier Sánchez Mendoza</h5>
+	</header>
+
+	<section>
+		<nav>
+			<ul>
+				<li><a class="active" href="index.html">Inicio</a></li>
+        <li><a href="formulario.html">Formulario</a></li>
+
+
+			</ul>
+
+  
+		</nav>
+
+		<article>
+		
+    <h1>Realización de una página web utilizando Javascript</h1>
+			
+
+
+      <form autocomplete="off" enctype="multipart/form-data" method="post" action="gracias.html"
+			onSubmit="return validate(this);" name="form">
+
+			<div class="info" style="padding-left:20px">
+				<h2>Formulario de Registro</h2>
+        <p><span class="error">* campo requerido</span></p>
+			<ul>
+
+
+				<li id="foli1" class="   ">
+					<label class="desc" id="title1" for="Field1">
+						Nombre Completo* </label>
+					<div>
+						<input id="name" name="fname" type="text" class="field text medium" value="" maxlength="255" tabindex="1" />
+					</div>
+				</li>
+
+
+				<li id="foli2" class="   ">
+					<label class="desc" id="title2" for="Field2">
+						Correo Electronico* </label>
+					<div>
+						<input id="email" name="femail" type="text" class="field text medium" value="" maxlength="255"
+							tabindex="2" />
+					</div>
+				</li>
+
+
+				<li id="foli3" class="   ">
+					<label class="desc" id="title3" for="Field3">
+						Usuario* </label>
+					<div>
+						<input id="username" name="fusername" type="text" class="field text medium" value="" maxlength="255"
+							tabindex="3" />
+					</div>
+				</li>
+
+
+				<li id="foli4" class="   ">
+					<label class="desc" id="title4" for="Field4">
+						Contraseña* </label>
+					<div>
+						<input id="password" name="fpassword" type="password" class="field text medium" value="" maxlength="255"
+							tabindex="4" />
+					</div>
+				</li>
+
+
+				<li id="foli6" class="   ">
+					<label class="desc" id="title6" for="Field6">
+						Genero* </label>
+					<div>
+						<select id="gender" name="fgender" class="field select medium" tabindex="5">
+							<option value="0">Gender</option>
+							<option value="1">Male</option>
+							<option value="2">Female</option>
+						</select>
+					</div>
+				</li>
+
+
+				<li id="foli15" class="   "></li>
+
+
+				<li class="buttons">
+					<input type="submit" value="Submit"
+						style=" background:#0060a1; color:#FFFFFF; font-size:14px; border:1px solid #0060a1" />
+				</li>
+
+
+			</ul>
+		</form>
+
+
+		</article>
+	</section>
+
+	<footer>
+		<p>UNIR México 2021</p>
+	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  
+  <script src="script.js"></script>
+</body>
+
+</html>

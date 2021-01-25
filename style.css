@@ -1,0 +1,224 @@
+
+.error {color: #FF0000;}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: lightblue;
+}
+
+p {
+  color: cadetblue;
+  font-family: verdana;
+  font-size: 16px;
+}
+
+/* [Estilo del encabezado] */
+/* Style the header */
+header {
+  background-color: #009CD0;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+h1 {
+  font-family: "Trirong", serif;
+  background-color: orange;
+  color: white;
+  text-shadow: 2px 2px 5px black;
+}
+h4 {
+  font-family: "Audiowide", sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li {
+  text-align: center;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+li a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+/* [Cree dos columnas / cajas que floten una al lado de la otra] */
+/* Create two columns/boxes that floats next to each other */
+nav {
+  font-family: Copperplate, Papyrus, fantasy;
+  float: left;
+  width: 30%;
+  height: 750px; /* only for demonstration, should be removed */
+  background: #48C9E1;
+  padding: 20px;
+}
+/* [Diseño de la lista dentro del menú] */
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 750px; /* only for demonstration, should be removed */
+}
+
+/* [Limpiar flotantes después de las columnas] */
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* [Estilo del pie de página] */
+/* Style the footer */
+footer {
+  background-color: #009CD0;
+  padding: 10px;
+  text-align: center;
+}
+
+footer p{ 
+ color: white;
+}
+
+/* [Diseño responsivo: hace que las dos columnas / cuadros se apilen una encima de la otra en lugar de una al lado de la otra, en pantallas pequeñas] */
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+/* [Tabla] */
+/*  Table */
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+
+form ul{
+	margin:0;
+	padding:0;
+	list-style-type:none;
+	width:100%;
+}
+form li{
+	display: block;
+	margin:0;
+	padding:4px 5px 2px 9px;
+	clear:both;
+}
+form li:after{
+	content:"."; 
+	display:block;
+	height:0; 
+	clear:both; 
+	visibility:hidden;
+}
+* html form li{height: 1%;}
+* html form li div{display:inline-block;}
+*+html form li div{display:inline-block;}
+
+form li div, form li span{
+	margin:0 4px 0 0;
+	padding:0 0 8px 0;
+	color:#444;
+}
+form li span{
+	float:left;
+}
+
+form li div.column{
+	padding-bottom:0;
+}
+form li div span.left, form li div span.right{
+	width:47%;
+	margin:0;
+}
+form li div span.full input, 
+form li div span.full select, 
+form li div span.left input, 
+form li div span.right input,
+form li div span.left select,
+form li div span.right select{
+	width:100%;
+}
+
+.left{
+	float:left;
+}
+.right{
+	float:right;
+}
+.clear{
+	clear:both !important;
+}
+
+
+/* ----- INFO ----- */
+
+.info{
+	display:inline-block; 
+	clear:both;
+	border-bottom:1px dotted #ccc;
+	margin:0 0 1em 0;
+}
+.info[class]{
+	display:block;
+}
+.info h2{
+	font-weight:normal;
+	font-size:160%;
+	margin:0 0 .2em 0;
+	clear:left;
+}
+.info div{
+	font-size:95%;
+	line-height:135%;
+	margin:0 0 1em 0;
+	color:#555;
+}
